@@ -2,7 +2,7 @@ exports.run = async (client, message, args) => {
   let filter = (msg) => msg.author.id === message.author.id;
   if (
     message.member.roles.cache.some(role =>
-      ["DM Permissions"].includes(role.name)
+      ["Alya Admin Perms"].includes(role.name)
     )
   ) {
     let mention =
